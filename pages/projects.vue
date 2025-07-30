@@ -42,7 +42,7 @@
           <input type="checkbox" :id="tech" @click="filterProjects(tech)" />
           <img
             :id="'icon-tech-' + tech"
-            :src="'/icons/techs/' + tech + '.svg'"
+            :src="'/icons/techs/' + escapeTechName(tech) + '.svg'"
             alt=""
             class="tech-icon w-5 h-5 mx-4"
           />
@@ -130,6 +130,10 @@ const techs = [
 const filters = ref(["all"]);
 const showFilters = ref(true);
 const projects = ref(config.value.projects);
+
+function escapeTechName(tech) {
+  return tech.toLowerCase().replace("#", "%23");
+}
 
 function filterProjects(tech) {
   document.getElementById("icon-tech-" + tech).classList.toggle("active");

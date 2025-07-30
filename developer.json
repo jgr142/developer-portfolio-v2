@@ -84,56 +84,56 @@
     "1": {
       "title": "_owldb",
       "description": "A RESTful NoSQL document database in Go featuring JSON schema validation, hierarchical document storage, real-time subscriptions with server-sent events, and basic token-based authentication and atomic operations.",
-      "img": "/images/projects/ui-animations2.png",
+      "img": "/images/projects/owldb.png",
       "tech": ["GoLang"],
       "url": "https://github.com/"
     },
     "2": {
       "title": "_m3ssag1n8",
       "description": "A real-time, web-based messaging app in TypeScript featuring user login, hierarchical workspaces and channels, rich markdown-style post formatting, emoji reactions, and live updates via server-sent events.",
-      "img": "/images/projects/ai-resources.png",
+      "img": "/images/projects/m3ssag1n8.png",
       "tech": ["HTML", "CSS", "JavaScript"],
       "url": "https://github.com/"
     },
     "3": {
       "title": "_golem",
       "description": "An interpreter written fully in golang. Compiler soon to come.",
-      "img": "/images/projects/worldmap.png",
+      "img": "/images/projects/golem.webp",
       "tech": ["GoLang"],
       "url": "https://github.com/"
     },
     "4": {
       "title": "_goserve",
       "description": "A secure and maintainable snippet-sharing web application in Go, implementing session-based authentication, HTML templating, and MySQL integration",
-      "img": "",
+      "img": "/images/projects/goserve.webp",
       "tech": ["GoLang", "HTML", "CSS"],
       "url": ""
     },
     "5": {
       "title": "_feat",
       "description": "A large-scale Java application that automatically generates concise black-box test suites for Python functions using data-driven analysis of buggy student implementations to support formative and summative feedback in programming education.",
-      "img": "/images/projects/ui-animations.png",
+      "img": "/images/projects/feat.webp",
       "tech": ["Java"],
       "url": "https://github.com/"
     },
     "6": {
       "title": "_malloc",
       "description": "A dynamic memory allocator in C that implements custom versions of malloc, free, and realloc using implicit free lists, first-fit placement, boundary-tag coalescing, and a consistency-checking heap validator.",
-      "img": "/images/projects/tetris-game.png",
+      "img": "/images/projects/malloc.webp",
       "tech": ["C"],
       "url": "https://github.com/"
     },
     "7": {
       "title": "_shell",
       "description": "A Unix shell implemented in C that supports job control, foreground and background execution, custom built-in commands (jobs, fg, bg, quit), signal handling (SIGINT, SIGTSTP, SIGCHLD), and process management using fork, execve, and waitpid.",
-      "img": "/images/projects/ethereum.png",
+      "img": "/images/projects/shell.webp",
       "tech": ["C"],
       "url": "https://github.com/"
     },
     "9": {
       "title": "_zeno",
       "description": "terminal based project helper.",
-      "img": "/images/projects/ethereum.png",
+      "img": "/images/projects/zeno.webp",
       "tech": ["GoLang"],
       "url": "https://github.com/"
     }

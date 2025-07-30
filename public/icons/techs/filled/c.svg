@@ -1,0 +1,15 @@
+
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="28" height="28" rx="2" fill="#A0C3FF"/>
+
+  <!-- C Logo -->
+  <g transform="translate(2.25, 1.25) scale(0.612)">
+
+    <!-- "C" shape -->
+    <path d="M19 7c7.727 0 14 6.273 14 14s-6.273 14-14 14-14-6.273-14-14 6.273-14 14-14zm0 7c-3.864 0-7 3.136-7 7s3.136 7 7 7 7-3.137 7-7-3.137-7-7-7z" fill="#011221"/>
+
+    <!-- Right-side shadow -->
+    <path d="M37.485 10.205c.516.483.506 1.211.506 1.784v18.384c.004.396-.127.813-.323 1.127L18.593 21z" fill="#A0C3FF"/>
+  </g>
+</svg>
