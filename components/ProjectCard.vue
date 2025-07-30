@@ -28,14 +28,13 @@
         <p class="text-menu-text font-fira_retina text-sm mb-5">
           {{ project.description }}
         </p>
-        <a
+        <Nuxt-link
           id="view-button"
-          :href="project.url"
-          target="_blank"
+          :to="`/projects/${project.id}`"
           class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg"
         >
           view-project
-        </a>
+        </Nuxt-link>
       </div>
     </div>
   </div>
@@ -91,4 +90,3 @@ const { project, key, index } = defineProps(["project", "key", "index"]);
   }
 }
 </style>
-
