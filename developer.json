@@ -1,7 +1,7 @@
 {
-  "name": "Micheal Weaver",
-  "logo_name": "micheal-weaver",
-  "role": "Front-end developer",
+  "name": "Joshua Gisiger",
+  "logo_name": "joshua-gisiger",
+  "role": "Software Engineer",
   "about": {
     "sections": {
       "professional-info": {
@@ -10,15 +10,11 @@
         "info": {
           "experience": {
             "title": "experience",
-            "description": "<br>Over the past 5 years, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+            "description": "<br>Over my career in computer science, I've developed a strong foundation in software engineering through hands-on experience across industries such as artificial intelligence, finance, and medical technology. I've worked in both startup and corporate environments, contributing to projects involving AI tooling, large-scale systems integration, and real-time data processing.<br><br>My work spans full-stack development, machine learning, and system design, often in fast-paced, high-impact settings. I’m comfortable navigating complex codebases, collaborating across teams, and quickly adapting to new technologies. Across every role, I focus on building reliable, efficient, and meaningful solutions that drive real-world value."
           },
           "hard-skills": {
             "title": "hard-skills",
-            "description": "<br>As a front-end developer, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-          },
-          "soft-skills": {
-            "title": "soft-skills",
-            "description": "<br>I bring more than Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+            "description": "<br><strong>Programming Languages:</strong> <br>- Python, <br>-Java, <br>-C, <br>-C#, <br>-Go, <br>-HTML/CSS/JavaScript<br><br><strong>Frameworks & Tools:</strong> <br>- TensorFlow, <br>- YOLO, <br>- Spacy, <br>- Git/GitHub, <br>- MCP, <br>- React, Vue, Next.Js, etc.<br><strong>AI & Machine Learning:</strong> <br>- Large Language Models (LLMs), <br>- Retrieval-Augmented Generation (RAG), <br>- Prompt Engineering, <br>- NLP, <br>- Computer Vision, <br><br><strong>Systems & Performance:</strong> <br>- Concurrent Programming, <br>- Modular Code Design, <br>- Algorithm Optimization, <br>- Multiprocessing<br><strong>Languages:</strong> Fluent in Spanish and French<br><strong>Other:</strong> Security-conscious development, Agile workflow, CLI tools, Cross-functional collaboration"
           }
         }
       },
@@ -38,8 +34,7 @@
             "title": "education",
             "description": "<br>I have always been passionate about lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
             "files": {
-              "high-school": "I have been in 'Las viñas'...",
-              "university": "The university..."
+              "university": "I am a rising senior at Rice University pursuing a Bachelor of Science in Computer Science. My academic journey has combined rigorous coursework in algorithms, systems, and machine learning with hands-on experience through internships and leadership roles on campus. With a strong foundation in both theory and practice, I’m passionate about building impactful software and exploring the intersection of technology, intelligence, and human-centered design."
             }
           }
         }
@@ -52,9 +47,9 @@
             "title": "sports",
             "description": "<br>I am an avid sports enthusiast and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
           },
-          "favorite-games": {
-            "title": "favorite-games",
-            "description": "<br>I am a passionate gamer with Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          "art-history": {
+            "title": "art-history",
+            "description": "<br>I’m a computer scientist at heart, but I’ve found a real passion for art history during my time at university. I’m especially fascinated by the dramatic shift from the detailed realism and grandeur of historical art between the 1500s and 1800s to the more experimental, abstract, and conceptually driven movements of the 1850s to the mid-20th century. I’ve taken several courses, including ones on Global Modernism, exploring how art and architecture across continents reflect tensions between tradition and modernity, and the Baroque Masters, including Rembrandt, Caravaggio, Velázquez, and others. What draws me in is how visual language evolves to reflect broader cultural and philosophical changes—how meaning can be expressed with as much power in abstraction as in realism.<br><br>Whether it's studying a Rembrandt chiaroscuro or the visual fragmentation of modernist architecture, art history gives me a different lens for thinking about structure, symbolism, and creativity."
           }
         }
       }
@@ -64,50 +59,20 @@
     "direct": {
       "title": "contacts",
       "sources": {
-        "email": "user@gmail.com",
-        "phone": "+3598246359"
+        "email": "j.r.gisiger@gmail.com",
+        "phone": "+1 (929) 386 8521"
       }
     },
     "social": {
       "github": {
         "title": "Github profile",
         "url": "https://github.com/",
-        "user": "username"
+        "user": "jgr142"
       },
-      "facebook": {
-        "title": "Facebook profile",
-        "url": "https://facebook.com/",
-        "user": "username"
-      },
-      "twitter": {
-        "title": "Twitter account",
-        "url": "https://twitter.com/",
-        "user": "username"
-      }
-    },
-    "find_me_also_in": {
-      "title": "find-me-also-in",
-      "sources": {
-        "youtube": {
-          "title": "YouTube channel",
-          "url": "https://www.youtube.com/",
-          "user": "username"
-        },
-        "gurushots": {
-          "title": "GuruShots profile",
-          "url": "https://gurushots.com/",
-          "user": "username"
-        },
-        "instagram": {
-          "title": "Instagram account",
-          "url": "https://instagram.com/",
-          "user": "username"
-        },
-        "twitch": {
-          "title": "Twitch profile",
-          "url": "https://twitch.com/",
-          "user": "username"
-        }
+      "linkedin": {
+        "title": "Linkedin profile",
+        "url": "https://linkedin.com/in/",
+        "user": "joshuagisiger"
       }
     }
   },
@@ -117,43 +82,64 @@
   },
   "projects": {
     "1": {
-      "title": "_ui-animations",
+      "title": "_owldb",
       "description": "Duis aute irure dolor in velit esse cillum dolore.",
       "img": "/images/projects/ui-animations2.png",
       "tech": ["Flutter"],
       "url": "https://github.com/"
     },
     "2": {
-      "title": "_ai-resources",
+      "title": "_m3ssag1n8",
       "description": "Duis aute irure dolor in velit esse cillum dolore.",
       "img": "/images/projects/ai-resources.png",
       "tech": ["Gatsby"],
       "url": "https://github.com/"
     },
     "3": {
-      "title": "_worldmap",
-      "description": "Duis aute irure dolor in velit esse cillum dolore.",
+      "title": "_golem",
+      "description": "an interpreter written fully in golang. Compiler soon to come.",
       "img": "/images/projects/worldmap.png",
       "tech": ["Angular"],
       "url": "https://github.com/"
     },
     "4": {
-      "title": "_ui-animations",
-      "description": "Duis aute irure dolor in velit esse cillum dolore.",
+      "title": "_goserve",
+      "description": "ssr go website",
+      "img": "",
+      "tech": "",
+      "url": ""
+    },
+    "5": {
+      "title": "_feat",
+      "description": "215 proj.",
       "img": "/images/projects/ui-animations.png",
       "tech": ["React"],
       "url": "https://github.com/"
     },
-    "5": {
-      "title": "_tetris-game",
-      "description": "Duis aute irure dolor in velit esse cillum dolore.",
+    "6": {
+      "title": "_malloc",
+      "description": "321 proj.",
       "img": "/images/projects/tetris-game.png",
       "tech": ["React"],
       "url": "https://github.com/"
     },
-    "6": {
-      "title": "_ethereum",
-      "description": "Duis aute irure dolor in velit esse cillum dolore.",
+    "7": {
+      "title": "_kvstore",
+      "description": "321 proj.",
+      "img": "/images/projects/ethereum.png",
+      "tech": ["Vue"],
+      "url": "https://github.com/"
+    },
+    "8": {
+      "title": "_rongo",
+      "description": "webdev website.",
+      "img": "/images/projects/ethereum.png",
+      "tech": ["Vue"],
+      "url": "https://github.com/"
+    },
+    "9": {
+      "title": "_zeno",
+      "description": "terminal based project helper.",
       "img": "/images/projects/ethereum.png",
       "tech": ["Vue"],
       "url": "https://github.com/"
