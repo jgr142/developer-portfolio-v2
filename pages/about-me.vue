@@ -84,7 +84,9 @@
                 @click.stop="selectFile(folder, key)"
               >
                 <img src="/icons/markdown.svg" alt="" class="ml-8 mr-3" />
-                <p>{{ key }}</p>
+                <p :class="{ active: isFileActive(key, folder.title) }">
+                  {{ key }}
+                </p>
               </div>
             </div>
           </div>
@@ -424,7 +426,10 @@ export default {
   computed: {
     // Set active class to current page link
     isActive() {
-      return (folder) => this.folder === folder;
+      return (folder) => this.folder === folder && !this.file;
+    },
+    isFileActive() {
+      return (file, folder) => this.file === file && this.folder === folder;
     },
     isSectionActive() {
       return (section) => this.currentSection === section;
@@ -479,6 +484,8 @@ export default {
             );
         if (folder.files) {
           this.selectFile(folder, Object.keys(folder.files)[0]);
+        } else {
+          this.file = null;
         }
       }
     },
