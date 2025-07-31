@@ -12,22 +12,18 @@
             "title": "experience",
             "files": {
               "experience": {
-                "title": "experience",
                 "id": "1",
                 "description": "<br>Over my career in computer science, I've developed a strong foundation in software engineering through hands-on experience across industries such as artificial intelligence, finance, and medical technology. I've worked in both startup and corporate environments, contributing to projects involving AI tooling, large-scale systems integration, and real-time data processing.<br><br>My work spans full-stack development, machine learning, and system design, often in fast-paced, high-impact settings. I’m comfortable navigating complex codebases, collaborating across teams, and quickly adapting to new technologies. Across every role, I focus on building reliable, efficient, and meaningful solutions that drive real-world value."
               },
               "dust": {
-                "title": "Dust",
                 "id": "2",
                 "description": "Embedded in an agile development team at an early-stage AI startup focused on productivity tools powered by LLMs. Authored 45+ merged PRs in a fast-paced AI startup environment, contributing to developer tooling, security enhancements, platform refactors, customer-reported errors, and performance/stability improvements across Dust's production codebase. Designed and built a Claude Code like CLI with an appealing UI for our client-facing platform, which when started created a client-side MCP server, supporting file read/edit operations, concurrent file handling, content and filename search (glob/grep), and shell command execution. Spearheaded delivery of a contract-critical integration for an external partner, coordinating directly with stakeholders and owning implementation. Researched and resolved security vulnerabilities, including prompt injection risks and unsafe image rendering paths. Debugged production issues and implemented several utility features to enhance team workflows and code maintainability."
               },
               "libermax-capital": {
-                "title": "Libermax Capital",
                 "id": "3",
                 "description": "Researched various LLMs, embedding models, and frameworks to design a Retrieval-Augmented Generation (RAG) system for the hedge fund. Implemented a fully local RAG system, enabling secure and private document query handling with LLM responses. Restructured the data flow and processing steps in programs using Spacy's NLP and other modules to support multiprocessing, allowing us to train 5 models simultaneously instead of one, thereby making the training process up to 5 times faster without any loss in quality. Debugged existing code using dynamic programming, modular programming, algorithm optimization, and other techniques. Improved efficiency and corrected semantics in existing code. Developed short, on-the-spot programs for quick and clean data retrieval."
               },
               "brainlab": {
-                "title": "Brainlab",
                 "id": "4",
                 "description": "Worked with TensorFlow API and YOLO to create object detection models using a wide range of pre-trained models to measure and compare which model worked best with our dataset. Trained an object detection model with a mAP near 90% and an average inference time of around 20 milliseconds. Actively learned new technologies, tools, and practices in the medical technology industry. This included but was not limited to Brainlab's Kick 2 and Image Viewer as well as Magic Leap's Magic Leap 1 and Magic Leap 2. Contributed to software development efforts through coding, debugging, and testing. Collaborated with cross-functional teams including developers, designers, and product managers."
               }
@@ -35,7 +31,12 @@
           },
           "hard-skills": {
             "title": "hard-skills",
-            "description": "<br><strong>Programming Languages:</strong> <br>- Python, <br>-Java, <br>-C, <br>-C#, <br>-Go, <br>-HTML/CSS/JavaScript<br><br><strong>Frameworks & Tools:</strong> <br>- TensorFlow, <br>- YOLO, <br>- Spacy, <br>- Git/GitHub, <br>- MCP, <br>- React, Vue, Next.Js, etc.<br><strong>AI & Machine Learning:</strong> <br>- Large Language Models (LLMs), <br>- Retrieval-Augmented Generation (RAG), <br>- Prompt Engineering, <br>- NLP, <br>- Computer Vision, <br><br><strong>Systems & Performance:</strong> <br>- Concurrent Programming, <br>- Modular Code Design, <br>- Algorithm Optimization, <br>- Multiprocessing<br><strong>Languages:</strong> Fluent in Spanish and French<br><strong>Other:</strong> Security-conscious development, Agile workflow, CLI tools, Cross-functional collaboration"
+            "files": {
+              "hard-skills": {
+                "id": "1",
+                "description": "<br><strong>Programming Languages:</strong> <br>- Python, <br>-Java, <br>-C, <br>-C#, <br>-Go, <br>-HTML/CSS/JavaScript<br><br><strong>Frameworks & Tools:</strong> <br>- TensorFlow, <br>- YOLO, <br>- Spacy, <br>- Git/GitHub, <br>- MCP, <br>- React, Vue, Next.Js, etc.<br><strong>AI & Machine Learning:</strong> <br>- Large Language Models (LLMs), <br>- Retrieval-Augmented Generation (RAG), <br>- Prompt Engineering, <br>- NLP, <br>- Computer Vision, <br><br><strong>Systems & Performance:</strong> <br>- Concurrent Programming, <br>- Modular Code Design, <br>- Algorithm Optimization, <br>- Multiprocessing<br><strong>Languages:</strong> Fluent in Spanish and French<br><strong>Other:</strong> Security-conscious development, Agile workflow, CLI tools, Cross-functional collaboration"
+              }
+            }
           }
         }
       },
@@ -45,17 +46,29 @@
         "info": {
           "bio": {
             "title": "bio",
-            "description": "<br> About me <br> I have 5 years of experience in web development lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat  nulla pariatur. Excepteur sint occaecat  officia deserunt mollit anim id est laborum."
+            "files": {
+              "bio": {
+                "id": "1",
+                "description": "<br> About me <br> I have 5 years of experience in web development lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat  nulla pariatur. Excepteur sint occaecat  officia deserunt mollit anim id est laborum."
+              }
+            }
           },
           "interests": {
             "title": "interests",
-            "description": "<br>I am constantly learning and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+            "files": {
+              "interests": {
+                "id": 1,
+                "description": "<br>I am constantly learning and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+              }
+            }
           },
           "education": {
             "title": "education",
-            "description": "<br>I have always been passionate about lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
             "files": {
-              "university": "I am a rising senior at Rice University pursuing a Bachelor of Science in Computer Science. My academic journey has combined rigorous coursework in algorithms, systems, and machine learning with hands-on experience through internships and leadership roles on campus. With a strong foundation in both theory and practice, I’m passionate about building impactful software and exploring the intersection of technology, intelligence, and human-centered design."
+              "university": {
+                "id": "1",
+                "description": "I am a rising senior at Rice University pursuing a Bachelor of Science in Computer Science. My academic journey has combined rigorous coursework in algorithms, systems, and machine learning with hands-on experience through internships and leadership roles on campus. With a strong foundation in both theory and practice, I’m passionate about building impactful software and exploring the intersection of technology, intelligence, and human-centered design."
+              }
             }
           }
         }
@@ -66,11 +79,21 @@
         "info": {
           "sports": {
             "title": "sports",
-            "description": "<br>I am an avid sports enthusiast and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+            "files": {
+              "sports": {
+                "id": 1,
+                "description": "<br>I am an avid sports enthusiast and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+              }
+            }
           },
           "art-history": {
             "title": "art-history",
-            "description": "<br>I’m a computer scientist at heart, but I’ve found a real passion for art history during my time at university. I’m especially fascinated by the dramatic shift from the detailed realism and grandeur of historical art between the 1500s and 1800s to the more experimental, abstract, and conceptually driven movements of the 1850s to the mid-20th century. I’ve taken several courses, including ones on Global Modernism, exploring how art and architecture across continents reflect tensions between tradition and modernity, and the Baroque Masters, including Rembrandt, Caravaggio, Velázquez, and others. What draws me in is how visual language evolves to reflect broader cultural and philosophical changes—how meaning can be expressed with as much power in abstraction as in realism.<br><br>Whether it's studying a Rembrandt chiaroscuro or the visual fragmentation of modernist architecture, art history gives me a different lens for thinking about structure, symbolism, and creativity."
+            "files": {
+              "art-history": {
+                "id": "1",
+                "description": "<br>I’m a computer scientist at heart, but I’ve found a real passion for art history during my time at university. I’m especially fascinated by the dramatic shift from the detailed realism and grandeur of historical art between the 1500s and 1800s to the more experimental, abstract, and conceptually driven movements of the 1850s to the mid-20th century. I’ve taken several courses, including ones on Global Modernism, exploring how art and architecture across continents reflect tensions between tradition and modernity, and the Baroque Masters, including Rembrandt, Caravaggio, Velázquez, and others. What draws me in is how visual language evolves to reflect broader cultural and philosophical changes—how meaning can be expressed with as much power in abstraction as in realism.<br><br>Whether it's studying a Rembrandt chiaroscuro or the visual fragmentation of modernist architecture, art history gives me a different lens for thinking about structure, symbolism, and creativity."
+              }
+            }
           }
         }
       }
