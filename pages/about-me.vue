@@ -118,7 +118,7 @@
             <a
               v-html="source"
               href="/"
-              class="font-fira_retina text-menu-text hover:text-white"
+              class="font-fira_retina text-menu-text hover:text-white break-all text-xs"
             ></a>
           </div>
         </div>
