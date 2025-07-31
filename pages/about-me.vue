@@ -226,7 +226,8 @@
         <div class="tab-height w-full hidden lg:flex border-bot items-center">
           <div class="flex items-center border-right h-full">
             <p
-              v-html="config.about.sections[currentSection]?.title"
+              v-if="file"
+              v-html="file"
               class="font-fira_regular text-menu-text text-sm px-3"
             ></p>
             <img src="/icons/close.svg" alt="" class="mx-3" />
@@ -459,7 +460,16 @@ export default {
   methods: {
     focusCurrentSection(section) {
       this.currentSection = section.title;
-      this.folder = Object.keys(section.info)[0];
+      const firstFolderKey = Object.keys(section.info)[0];
+      this.folder = firstFolderKey;
+      this.openFolder = firstFolderKey;
+
+      const firstFolder = section.info[firstFolderKey];
+      if (firstFolder && firstFolder.files) {
+        this.file = Object.keys(firstFolder.files)[0];
+      } else {
+        this.file = null;
+      }
 
       document
         .getElementById("folders-" + section.title)
@@ -508,6 +518,18 @@ export default {
   },
   mounted() {
     this.loading = false;
+    const firstSectionKey = Object.keys(this.config.about.sections)[0];
+    const firstSection = this.config.about.sections[firstSectionKey];
+    this.currentSection = firstSection.title;
+
+    const firstFolderKey = Object.keys(firstSection.info)[0];
+    const firstFolder = firstSection.info[firstFolderKey];
+    this.folder = firstFolder.title;
+    this.openFolder = firstFolder.title;
+
+    if (firstFolder.files) {
+      this.file = Object.keys(firstFolder.files)[0];
+    }
   },
 };
 </script>
