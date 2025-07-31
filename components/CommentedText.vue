@@ -32,23 +32,29 @@ export default {
       lines: 0
     };
   },
+  watch: {
+    text() {
+      this.$nextTick(() => {
+        this.updateLines();
+      });
+    }
+  },
   mounted() {
     this.updateLines();
     window.addEventListener("resize", this.updateLines);
-    window.addEventListener("click", this.updateLines);
   },
-  beforeDestroy() {
+  beforeUnmount() {
     window.removeEventListener("resize", this.updateLines);
-    window.removeEventListener("click", this.updateLines);
   },
   methods: {
     updateLines() {
       const textContainer = this.$el.querySelector(".text-container");
-      const style = window.getComputedStyle(textContainer);
-      const fontSize = parseInt(style.fontSize);
-      const lineHeight = parseInt(style.lineHeight);
-      const maxHeight = textContainer.offsetHeight;
-      this.lines = Math.ceil(maxHeight / lineHeight) + 1;
+      if (textContainer) {
+        const style = window.getComputedStyle(textContainer);
+        const lineHeight = parseInt(style.lineHeight);
+        const maxHeight = textContainer.offsetHeight;
+        this.lines = Math.ceil(maxHeight / lineHeight) + 1;
+      }
     }
   }
 };
