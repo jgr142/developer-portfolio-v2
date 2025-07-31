@@ -253,7 +253,7 @@
           id="commented-text"
           class="flex h-full w-full lg:border-right overflow-hidden"
         >
-          <div class="w-full h-full ml-5 mr-10 lg:my-5 overflow-scroll">
+          <div class="w-full h-full ml-5 mr-10 lg:py-5 overflow-scroll">
             <CommentedText :text="displayedContent" />
           </div>
 
