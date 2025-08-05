@@ -283,6 +283,7 @@
             <Timeline 
               :items="experienceItems" 
               :active-item="file"
+              @select-item="file = $event"
             />
           </div>
           <div v-else id="gists" class="flex flex-col lg:px-6 lg:py-4 w-full overflow-hidden">

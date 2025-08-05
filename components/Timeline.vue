@@ -5,9 +5,10 @@
       <div
         v-for="(item, index) in sortedItems"
         :key="item.key"
-        class="timeline-node-container absolute left-1/2 -translate-x-1/2 transition-opacity duration-500"
+        class="timeline-node-container absolute left-1/2 -translate-x-1/2 transition-opacity duration-500 cursor-pointer"
         :class="{ 'opacity-50': !isActive(item.key) }"
         :style="{ top: `${(index / (sortedItems.length - 1)) * 100}%` }"
+        @click="selectItem(item.key)"
       >
         <div
           class="timeline-node w-4 h-4 rounded-full border-2 border-menu-text bg-blue-background"
@@ -53,6 +54,9 @@ export default {
   methods: {
     isActive(key) {
       return this.activeItem === key;
+    },
+    selectItem(key) {
+      this.$emit('select-item', key);
     },
   },
 };
