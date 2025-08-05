@@ -279,10 +279,13 @@
         ></div>
 
         <div id="gists-content" class="flex">
-          <div
-            id="gists"
-            class="flex flex-col lg:px-6 lg:py-4 w-full overflow-hidden"
-          >
+          <div v-if="folder === 'experience'" class="w-full">
+            <Timeline 
+              :items="experienceItems" 
+              :active-item="file"
+            />
+          </div>
+          <div v-else id="gists" class="flex flex-col lg:px-6 lg:py-4 w-full overflow-hidden">
             <!-- title -->
             <h3 class="text-white lg:text-menu-text mb-4 text-sm">
               // Code snippet showcase:
@@ -424,7 +427,16 @@ export default {
       config: DevConfig,
     };
   },
-  computed: {
+    computed: {
+    experienceItems() {
+      if (this.config.about.sections['professional-info']?.info?.experience?.files) {
+        const files = this.config.about.sections['professional-info'].info.experience.files;
+        return Object.keys(files)
+          .map(key => ({ key, ...files[key] }))
+          .filter(item => item.year);
+      }
+      return [];
+    },
     // Set active class to current page link
     isActive() {
       return (folder) => this.folder === folder && !this.file;
