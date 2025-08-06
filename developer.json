@@ -83,12 +83,22 @@
         "title": "hobbies-info",
         "icon": "icons/info-hobbies.svg",
         "info": {
-          "sports": {
-            "title": "sports",
+          "tech-curiosity": {
+            "title": "tech-curiosity",
             "files": {
-              "sports": {
+              "tech-curiosity": {
                 "id": 1,
-                "description": "<br>I am an avid sports enthusiast and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                "description": "<br>I like to consume cool knowledge and stories around tech.<br><br>This is going to sound super weird and fake, but I really like reading about design patterns and code structure.<br><br>Learning what ways of thinking are appropriate to what types of problems, and how to shift one's approach to a certain mindset.<br><br>There's nothing that brings me quite as much peace as an elegant solution to a difficult problem.<br><br>I've read classics like the Gang of Four's <em>Design Patterns</em> and Uncle Bob's, now controversial, <em>Clean Code</em> and <em>Clean Architecture</em>.<br><br>I also love reading about the history of technology and its consequential developments.<br><br>Current favorites are <em>Deep Future</em> by Pablos Holman and <em>The Innovators</em> by Walter Isaacson.",
+                "images": [
+                  {
+                    "title": "Design Patterns",
+                    "src": "/images/hobbies/design-patterns.jpg"
+                  },
+                  {
+                    "title": "The Innovators",
+                    "src": "/images/hobbies/the-innovators.png"
+                  }
+                ]
               }
             }
           },
@@ -97,7 +107,17 @@
             "files": {
               "art-history": {
                 "id": "1",
-                "description": "<br>I’m a computer scientist at heart, but I’ve found a real passion for art history during my time at university. I’m especially fascinated by the dramatic shift from the detailed realism and grandeur of historical art between the 1500s and 1800s to the more experimental, abstract, and conceptually driven movements of the 1850s to the mid-20th century. I’ve taken several courses, including ones on Global Modernism, exploring how art and architecture across continents reflect tensions between tradition and modernity, and the Baroque Masters, including Rembrandt, Caravaggio, Velázquez, and others. What draws me in is how visual language evolves to reflect broader cultural and philosophical changes—how meaning can be expressed with as much power in abstraction as in realism.<br><br>Whether it's studying a Rembrandt chiaroscuro or the visual fragmentation of modernist architecture, art history gives me a different lens for thinking about structure, symbolism, and creativity."
+                "description": "<br>I’m a computer scientist at heart, but I’ve found a real passion for art history during my time at university. I’m especially fascinated by the dramatic shift from the detailed realism and grandeur of historical art between the 1500s and 1800s to the more experimental, abstract, and conceptually driven movements of the 1850s to the mid-20th century. I’ve taken several courses, including ones on Global Modernism, exploring how art and architecture across continents reflect tensions between tradition and modernity, and the Baroque Masters, including Rembrandt, Caravaggio, Velázquez, and others. What draws me in is how visual language evolves to reflect broader cultural and philosophical changes—how meaning can be expressed with as much power in abstraction as in realism.<br><br>Whether it's studying a Rembrandt chiaroscuro or the visual fragmentation of modernist architecture, art history gives me a different lens for thinking about structure, symbolism, and creativity.",
+                "images": [
+                  {
+                    "title": "Martyrdom of St. Peter (Caravaggio)",
+                    "src": "/images/hobbies/caravaggio.jpg"
+                  },
+                  {
+                    "title": "Guernica (Pablo Picasso)",
+                    "src": "/images/hobbies/guernica.jpeg"
+                  }
+                ]
               }
             }
           }

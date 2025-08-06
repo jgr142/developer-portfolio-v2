@@ -254,7 +254,7 @@
           class="flex h-full w-full lg:border-right overflow-hidden"
         >
           <div class="w-full h-full ml-5 mr-10 lg:py-5 overflow-scroll">
-            <CommentedText :text="displayedContent" />
+            <CommentedText :text="displayedContent.description" />
           </div>
 
           <!-- scroll bar -->
@@ -280,13 +280,20 @@
 
         <div id="gists-content" class="flex">
           <div v-if="folder === 'experience'" class="w-full">
-            <Timeline 
-              :items="experienceItems" 
+            <Timeline
+              :items="experienceItems"
               :active-item="file"
               @select-item="file = $event"
             />
           </div>
-          <div v-else id="gists" class="flex flex-col lg:px-6 lg:py-4 w-full overflow-hidden">
+          <div v-else-if="images.length" class="w-full">
+            <ImageDisplay :images="images" />
+          </div>
+          <div
+            v-else
+            id="gists"
+            class="flex flex-col lg:px-6 lg:py-4 w-full overflow-hidden"
+          >
             <!-- title -->
             <h3 class="text-white lg:text-menu-text mb-4 text-sm">
               // Code snippet showcase:
@@ -410,6 +417,8 @@
 
 <script>
 import DevConfig from "~/developer.json";
+import Timeline from "~/components/Timeline.vue";
+
 export default {
   data() {
     return {
@@ -428,15 +437,26 @@ export default {
       config: DevConfig,
     };
   },
-    computed: {
+  computed: {
     experienceItems() {
-      if (this.config.about.sections['professional-info']?.info?.experience?.files) {
-        const files = this.config.about.sections['professional-info'].info.experience.files;
+      if (
+        this.config.about.sections["professional-info"]?.info?.experience?.files
+      ) {
+        const files =
+          this.config.about.sections["professional-info"].info.experience.files;
         return Object.keys(files)
-          .map(key => ({ key, ...files[key] }))
-          .filter(item => item.year);
+          .map((key) => ({ key, ...files[key] }))
+          .filter((item) => item.year);
       }
       return [];
+    },
+    images() {
+      const fileObj =
+        this.file &&
+        this.config.about.sections[this.currentSection].info[this.folder].files[
+          this.file
+        ];
+      return fileObj?.images || [];
     },
     // Set active class to current page link
     isActive() {
@@ -459,15 +479,16 @@ export default {
         ];
 
       if (fileObj && typeof fileObj === "object") {
-        return fileObj.description || "";
+        return fileObj;
       } else if (
         this.config.about.sections[this.currentSection].info[this.folder]
       ) {
-        return this.config.about.sections[this.currentSection].info[this.folder]
-          .description;
+        return this.config.about.sections[this.currentSection].info[
+          this.folder
+        ];
       }
 
-      return "";
+      return {};
     },
   },
   methods: {
