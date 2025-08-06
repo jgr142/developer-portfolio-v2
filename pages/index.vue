@@ -15,10 +15,7 @@
       </div>
 
       <div id="info">
-        <span class="action"> // complete the game to continue </span>
-        <span :class="{ hide: isMobile }">
-          // you can also see it on my Github page
-        </span>
+        <span :class="{ hide: isMobile }"> // check out my github page </span>
         <span :class="{ hide: !isMobile }">
           // find my profile on Github:
         </span>
