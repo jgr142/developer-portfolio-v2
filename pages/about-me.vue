@@ -286,8 +286,13 @@
               @select-item="file = $event"
             />
           </div>
-          <div v-else-if="images.length || personalInfoImages.length" class="w-full">
-            <ImageDisplay :images="personalInfoImages.length ? personalInfoImages : images" />
+          <div
+            v-else-if="images.length || personalInfoImages.length"
+            class="w-full"
+          >
+            <ImageDisplay
+              :images="personalInfoImages.length ? personalInfoImages : images"
+            />
           </div>
           <div
             v-else
@@ -451,11 +456,18 @@ export default {
       return [];
     },
     personalInfoImages() {
-      if (this.currentSection !== 'personal-info') return [];
+      if (this.currentSection !== "personal-info") return [];
       return [
-        { title: 'Family Picture', src: '/images/personal-info/family-picture.jpg' },
-        { title: 'Rice University', src: '/images/personal-info/rice.webp' },
-        { title: 'Swiss Mexican', src: '/images/personal-info/swiss-mexican.jpg' },
+        {
+          title: "Family Picture",
+          src: "/images/personal-info/family-picture.jpg",
+        },
+        { title: "Rice University", src: "/images/personal-info/rice.webp" },
+        {
+          title: "Swiss Mexican",
+          src: "/images/personal-info/swiss-mexican.jpg",
+        },
+        { title: "SpiderJosh", src: "/images/personal-info/spiderman.png" },
       ];
     },
     images() {
