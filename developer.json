@@ -93,11 +93,13 @@
                 "images": [
                   {
                     "title": "Consequences of War (Peter Paul Rubens)",
-                    "src": "/images/hobbies/consequences-of-war.jpg"
+                    "src": "/images/hobbies/consequences-of-war.jpg",
+                    "wide": true
                   },
                   {
                     "title": "Guernica (Pablo Picasso)",
-                    "src": "/images/hobbies/guernica.jpg"
+                    "src": "/images/hobbies/guernica.jpg",
+                    "wide": true
                   }
                 ]
               }
