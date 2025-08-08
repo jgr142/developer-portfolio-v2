@@ -4,6 +4,39 @@
   "role": "Software Engineer",
   "about": {
     "sections": {
+      "personal-info": {
+        "title": "personal-info",
+        "icon": "icons/info-personal.svg",
+        "info": {
+          "bio": {
+            "title": "bio",
+            "files": {
+              "bio": {
+                "id": "1",
+                "description": "<br> Hi Y'all, my name is Joshua Emiliano Nicolas Romo Gisiger Gonzalez. Yes... that's my full legal name. I was born and raised in Switzerland in a Mexican family, and moved to New York City at age 11 without knowing a word of English. <br><br> I'm now pursuing a B.S. in Computer Science with a Data Science minor at Rice University, and could not have been more grateful for every moment that has brought me to this point in my life. <br><br> I am deeply interested in the disruptions AI is causing and in building the systems and models that make AI so powerful and beneficial to humanity. Because with great power comes great responsibility."
+              }
+            }
+          },
+          "interests": {
+            "title": "interests",
+            "files": {
+              "interests": {
+                "id": 1,
+                "description": "<br>I am constantly learning and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+              }
+            }
+          },
+          "education": {
+            "title": "education",
+            "files": {
+              "university": {
+                "id": "1",
+                "description": "I am a rising senior at Rice University pursuing a Bachelor of Science in Computer Science. My academic journey has combined rigorous coursework in algorithms, systems, and machine learning with hands-on experience through internships and leadership roles on campus. With a strong foundation in both theory and practice, I’m passionate about building impactful software and exploring the intersection of technology, intelligence, and human-centered design."
+              }
+            }
+          }
+        }
+      },
       "professional-info": {
         "title": "professional-info",
         "icon": "icons/info-professional.svg",
@@ -41,39 +74,6 @@
               "hard-skills": {
                 "id": "1",
                 "description": "<br><strong>Programming Languages:</strong> <br>- Python, <br>-Java, <br>-C, <br>-C#, <br>-Go, <br>-HTML/CSS/JavaScript<br><br><strong>Frameworks & Tools:</strong> <br>- TensorFlow, <br>- YOLO, <br>- Spacy, <br>- Git/GitHub, <br>- MCP, <br>- React, Vue, Next.Js, etc.<br><strong>AI & Machine Learning:</strong> <br>- Large Language Models (LLMs), <br>- Retrieval-Augmented Generation (RAG), <br>- Prompt Engineering, <br>- NLP, <br>- Computer Vision, <br><br><strong>Systems & Performance:</strong> <br>- Concurrent Programming, <br>- Modular Code Design, <br>- Algorithm Optimization, <br>- Multiprocessing<br><strong>Languages:</strong> Fluent in Spanish and French<br><strong>Other:</strong> Security-conscious development, Agile workflow, CLI tools, Cross-functional collaboration"
-              }
-            }
-          }
-        }
-      },
-      "personal-info": {
-        "title": "personal-info",
-        "icon": "icons/info-personal.svg",
-        "info": {
-          "bio": {
-            "title": "bio",
-            "files": {
-              "bio": {
-                "id": "1",
-                "description": "<br> About me <br> I have 5 years of experience in web development lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat  nulla pariatur. Excepteur sint occaecat  officia deserunt mollit anim id est laborum."
-              }
-            }
-          },
-          "interests": {
-            "title": "interests",
-            "files": {
-              "interests": {
-                "id": 1,
-                "description": "<br>I am constantly learning and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-              }
-            }
-          },
-          "education": {
-            "title": "education",
-            "files": {
-              "university": {
-                "id": "1",
-                "description": "I am a rising senior at Rice University pursuing a Bachelor of Science in Computer Science. My academic journey has combined rigorous coursework in algorithms, systems, and machine learning with hands-on experience through internships and leadership roles on campus. With a strong foundation in both theory and practice, I’m passionate about building impactful software and exploring the intersection of technology, intelligence, and human-centered design."
               }
             }
           }
