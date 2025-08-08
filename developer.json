@@ -92,12 +92,12 @@
                 "description": "<br>I’m a computer scientist at heart, but I’ve found a real passion for art history during my time at university. I’m especially fascinated by the dramatic shift from the detailed realism and grandeur of historical art between the 1500s and 1800s to the more experimental, abstract, and conceptually driven movements of the 1850s to the mid-20th century. I’ve taken several courses, including ones on Global Modernism, exploring how art and architecture across continents reflect tensions between tradition and modernity, and the Baroque Masters, including Rembrandt, Caravaggio, Velázquez, and others. What draws me in is how visual language evolves to reflect broader cultural and philosophical changes—how meaning can be expressed with as much power in abstraction as in realism.<br><br>Whether it's studying a Rembrandt chiaroscuro or the visual fragmentation of modernist architecture, art history gives me a different lens for thinking about structure, symbolism, and creativity.",
                 "images": [
                   {
-                    "title": "Martyrdom of St. Peter (Caravaggio)",
-                    "src": "/images/hobbies/caravaggio.jpg"
+                    "title": "Consequences of War (Peter Paul Rubens)",
+                    "src": "/images/hobbies/consequences-of-war.jpg"
                   },
                   {
                     "title": "Guernica (Pablo Picasso)",
-                    "src": "/images/hobbies/guernica.jpeg"
+                    "src": "/images/hobbies/guernica.jpg"
                   }
                 ]
               }
