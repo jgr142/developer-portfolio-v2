@@ -22,7 +22,7 @@
             "files": {
               "university": {
                 "id": "1",
-                "description": "I am a rising senior at Rice University pursuing a Bachelor of Science in Computer Science. My academic journey has combined rigorous coursework in algorithms, systems, and machine learning with hands-on experience through internships and leadership roles on campus. With a strong foundation in both theory and practice, I’m passionate about building impactful software and exploring the intersection of technology, intelligence, and human-centered design."
+                "description": "<br>I am pursuing a B.S. in Computer Science with a minor in Data Science at Rice University.<br><br>I have a 3.87 GPA and have been repeatedly recognized on the President's Honor Roll for academic excellence.<br><br> My relevant coursework include: Intro to Computer Systems, Concurrent Program Design, Intro to Computer Vision, Tools & Models for Data Science, Linear Algebra, Probability & Statistics, Computer Ethics, (and more).<br><br>I currently serve as Vice President of Tech Solutions for ACT Rice, and previously led a 38-person team as System Architect on a product delivery for SLB. I also served as RHA lead for my residential college (McMurtry) and volunteer as an ESL tutor for Rice Housing and Dining staff."
               }
             }
           }
@@ -56,15 +56,6 @@
                 "year": "2023",
                 "title": "Brainlab",
                 "description": "Worked with TensorFlow API and YOLO to create object detection models using a wide range of pre-trained models to measure and compare which model worked best with our dataset. Trained an object detection model with a mAP near 90% and an average inference time of around 20 milliseconds. Actively learned new technologies, tools, and practices in the medical technology industry. This included but was not limited to Brainlab's Kick 2 and Image Viewer as well as Magic Leap's Magic Leap 1 and Magic Leap 2. Contributed to software development efforts through coding, debugging, and testing. Collaborated with cross-functional teams including developers, designers, and product managers."
-              }
-            }
-          },
-          "hard-skills": {
-            "title": "hard-skills",
-            "files": {
-              "hard-skills": {
-                "id": "1",
-                "description": "<br><strong>Programming Languages:</strong> <br>- Python, <br>-Java, <br>-C, <br>-C#, <br>-Go, <br>-HTML/CSS/JavaScript<br><br><strong>Frameworks & Tools:</strong> <br>- TensorFlow, <br>- YOLO, <br>- Spacy, <br>- Git/GitHub, <br>- MCP, <br>- React, Vue, Next.Js, etc.<br><strong>AI & Machine Learning:</strong> <br>- Large Language Models (LLMs), <br>- Retrieval-Augmented Generation (RAG), <br>- Prompt Engineering, <br>- NLP, <br>- Computer Vision, <br><br><strong>Systems & Performance:</strong> <br>- Concurrent Programming, <br>- Modular Code Design, <br>- Algorithm Optimization, <br>- Multiprocessing<br><strong>Languages:</strong> Fluent in Spanish and French<br><strong>Other:</strong> Security-conscious development, Agile workflow, CLI tools, Cross-functional collaboration"
               }
             }
           }
