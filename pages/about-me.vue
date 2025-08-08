@@ -117,8 +117,8 @@
             <img :src="'/icons/' + key + '.svg'" alt="" class="mx-4" />
             <a
               v-html="source"
-              href="/"
-              class="font-fira_retina text-menu-text hover:text-white break-all text-xs"
+              @click="copyToClipboard(source)"
+              class="font-fira_retina text-menu-text hover:text-white break-all text-xs hover:cursor-pointer"
             ></a>
           </div>
         </div>
@@ -210,8 +210,8 @@
             <img :src="'/icons/' + key + '.svg'" alt="" />
             <a
               v-html="source"
-              href="/"
-              class="font-fira_retina text-menu-text hover:text-white ml-4"
+              @click="copyToClipboard(source)"
+              class="font-fira_retina text-menu-text hover:text-white ml-4 hover:cursor-pointer"
             ></a>
           </div>
         </div>
@@ -325,6 +325,7 @@
         </div>
       </div>
     </div>
+      <CopiedNotification :visible="copied" message="Copied!" @close="copied = false" />
   </main>
 </template>
 
@@ -423,8 +424,10 @@
 <script>
 import DevConfig from "~/developer.json";
 import Timeline from "~/components/Timeline.vue";
+import CopiedNotification from "~/components/CopiedNotification.vue";
 
 export default {
+  components: { Timeline, CopiedNotification },
   data() {
     return {
       currentSection: "personal-info",
@@ -432,6 +435,8 @@ export default {
       openFolder: null,
       file: null,
       loading: true,
+      copied: false,
+      copiedValue: null,
     };
   },
   /**
@@ -568,6 +573,16 @@ export default {
     showContacts() {
       document.getElementById("contacts").classList.toggle("hidden");
       document.getElementById("section-arrow").classList.toggle("rotate-90"); // rotate arrow
+    },
+    copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        this.copied = true;
+        this.copiedValue = text;
+        setTimeout(() => {
+          this.copied = false;
+          this.copiedValue = null;
+        }, 2000); // Hide after 2 seconds
+      });
     },
   },
   mounted() {
