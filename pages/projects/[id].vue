@@ -43,8 +43,16 @@
               class="w-8 h-8 mr-2 mb-2"
             />
           </div>
+          <div v-if="project.made_in_school">
+            <p class="text-menu-text font-fira_retina text-sm">
+              I can't show the source code because this project was developed as
+              part of my university coursework. However, I would be happy to
+              discuss it in more detail during a meeting or interview.
+            </p>
+          </div>
           <a
-            :href="project.github"
+            v-else
+            :href="project.url"
             target="_blank"
             class="text-blue-400 hover:underline"
             >View on GitHub</a

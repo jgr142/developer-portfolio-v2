@@ -141,7 +141,7 @@
       "description": "A RESTful NoSQL document database in Go featuring JSON schema validation, hierarchical document storage, real-time subscriptions with server-sent events, and basic token-based authentication and atomic operations.",
       "img": "/images/projects/owldb.png",
       "tech": ["GoLang"],
-      "url": "https://github.com/"
+      "made_in_school": true
     },
     "2": {
       "id": "m3ssag1n8",
@@ -149,7 +149,7 @@
       "description": "A real-time, web-based messaging app in TypeScript featuring user login, hierarchical workspaces and channels, rich markdown-style post formatting, emoji reactions, and live updates via server-sent events.",
       "img": "/images/projects/m3ssag1n8.png",
       "tech": ["HTML", "CSS", "JavaScript"],
-      "url": "https://github.com/"
+      "made_in_school": true
     },
     "3": {
       "id": "golem",
@@ -157,7 +157,7 @@
       "description": "An interpreter written fully in golang. Compiler soon to come.",
       "img": "/images/projects/golem.webp",
       "tech": ["GoLang"],
-      "url": "https://github.com/"
+      "made_in_school": true
     },
     "4": {
       "id": "goserve",
@@ -173,7 +173,7 @@
       "description": "A large-scale Java application that automatically generates concise black-box test suites for Python functions using data-driven analysis of buggy student implementations to support formative and summative feedback in programming education.",
       "img": "/images/projects/feat.webp",
       "tech": ["Java"],
-      "url": "https://github.com/"
+      "made_in_school": true
     },
     "6": {
       "id": "malloc",
@@ -181,7 +181,7 @@
       "description": "A dynamic memory allocator in C that implements custom versions of malloc, free, and realloc using implicit free lists, first-fit placement, boundary-tag coalescing, and a consistency-checking heap validator.",
       "img": "/images/projects/malloc.webp",
       "tech": ["C"],
-      "url": "https://github.com/"
+      "made_in_school": true
     },
     "7": {
       "id": "shell",
@@ -189,7 +189,7 @@
       "description": "A Unix shell implemented in C that supports job control, foreground and background execution, custom built-in commands (jobs, fg, bg, quit), signal handling (SIGINT, SIGTSTP, SIGCHLD), and process management using fork, execve, and waitpid.",
       "img": "/images/projects/shell.webp",
       "tech": ["C"],
-      "url": "https://github.com/"
+      "made_in_school": true
     },
     "9": {
       "id": "zeno",
