@@ -5,88 +5,73 @@
     </div>
 
     <div id="page-menu" class="w-full flex">
-      <!-- DESKTOP section icons -->
-      <div id="sections">
-        <div
-          id="section-icon"
-          v-for="section in config.about.sections"
-          :key="section.title"
-          :class="{ active: isSectionActive(section.title) }"
-        >
-          <img
-            :id="'section-icon-' + section.title"
-            :src="section.icon"
-            :alt="section.title + '-section'"
-            @click="focusCurrentSection(section)"
-          />
-        </div>
-      </div>
-
       <!-- focused section content -->
       <div
         id="section-content"
         class="hidden lg:block w-full h-full border-right"
       >
-        <!-- title -->
-        <div
-          id="section-content-title"
-          class="hidden lg:flex items-center min-w-full"
-        >
-          <img
-            id="section-arrow-menu"
-            src="/icons/arrow.svg"
-            alt=""
-            class="section-arrow mx-3 open"
-          />
-          <p
-            v-html="config.about.sections[currentSection]?.title"
-            class="font-fira_regular text-white text-sm"
-          ></p>
-        </div>
-
-        <!-- folders -->
-        <div>
+        <div v-for="(section, sectionKey) in config.about.sections" :key="sectionKey">
+          <!-- title -->
           <div
-            v-for="(folder, key, index) in config.about.sections[currentSection]
-              ?.info"
-            :key="key"
-            class="grid grid-cols-2 items-center my-2 font-fira_regular text-menu-text"
+            id="section-content-title"
+            class="hidden lg:flex items-center min-w-full hover:cursor-pointer"
+            @click="openSections[sectionKey] = !openSections[sectionKey]"
           >
+            <img
+              id="section-arrow-menu"
+              src="/icons/arrow.svg"
+              alt=""
+              class="section-arrow mx-3"
+              :class="{ open: openSections[sectionKey] }"
+            />
+            <p
+              v-html="section.title"
+              class="font-fira_regular text-white text-sm"
+            ></p>
+          </div>
+
+          <!-- folders -->
+          <div v-if="openSections[sectionKey]">
             <div
-              class="flex col-span-2 hover:text-white hover:cursor-pointer"
-              @click="focusCurrentFolder(folder)"
-            >
-              <img
-                id="diple"
-                src="/icons/diple.svg"
-                alt=""
-                :class="{ open: isOpen(folder.title) }"
-              />
-              <img
-                :src="'/icons/folder' + (index + 1) + '.svg'"
-                alt=""
-                class="mr-3"
-              />
-              <p
-                :id="folder.title"
-                v-html="key"
-                :class="{ active: isActive(folder.title) }"
-              ></p>
-            </div>
-            <div
-              v-if="isOpen(folder.title) && folder.files !== undefined"
-              class="col-span-2"
+              v-for="(folder, key, index) in section.info"
+              :key="key"
+              class="grid grid-cols-2 items-center my-2 font-fira_regular text-menu-text"
             >
               <div
-                v-for="(file, key) in folder.files"
-                :key="key"
-                class="hover:text-white hover:cursor-pointer flex my-2"
-                @click.stop="selectFile(folder, key)"
+                            class="flex col-span-2 hover:text-white hover:cursor-pointer"
+                            @click="focusCurrentFolder(folder, sectionKey)"
+                          >                <img
+                  id="diple"
+                  src="/icons/diple.svg"
+                  alt=""
+                  :class="{ open: isOpen(folder.title) }"
+                />
+                <img
+                  :src="'/icons/folder' + (index + 1) + '.svg'"
+                  alt=""
+                  class="mr-3"
+                />
+                <p
+                  :id="folder.title"
+                  v-html="key"
+                  :class="{ active: isActive(folder.title) }"
+                ></p>
+              </div>
+              <div
+                v-if="isOpen(folder.title) && folder.files !== undefined"
+                class="col-span-2"
               >
-                <img src="/icons/markdown.svg" alt="" class="ml-8 mr-3" />
-                <p :class="{ active: isFileActive(key, folder.title) }">
-                  {{ key }}
-                </p>
+                <div
+                  v-for="(file, key) in folder.files"
+                  :key="key"
+                  class="hover:text-white hover:cursor-pointer flex my-2"
+                  @click.stop="selectFile(folder, key)"
+                >
+                  <img src="/icons/markdown.svg" alt="" class="ml-8 mr-3" />
+                  <p :class="{ active: isFileActive(key, folder.title) }">
+                    {{ key }}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -95,20 +80,22 @@
         <!-- contact -->
         <div
           id="section-content-title-contact"
-          class="flex items-center min-w-full border-top"
+          class="flex items-center min-w-full border-top hover:cursor-pointer"
+          @click="showContacts = !showContacts"
         >
           <img
             id="section-arrow-menu"
             src="/icons/arrow.svg"
             alt=""
-            class="section-arrow mx-3 open"
+            class="section-arrow mx-3"
+            :class="{ open: showContacts }"
           />
           <p
             v-html="config.contacts.direct.title"
             class="font-fira_regular text-white text-sm"
           ></p>
         </div>
-        <div id="contact-sources" class="hidden lg:flex lg:flex-col my-2">
+        <div v-show="showContacts" id="contact-sources" class="lg:flex lg:flex-col my-2">
           <div
             v-for="(source, key) in config.contacts.direct.sources"
             :key="key"
@@ -437,6 +424,13 @@ export default {
       loading: true,
       copied: false,
       copiedValue: null,
+      showFolders: true,
+      showContacts: true,
+      openSections: {
+        "personal-info": true,
+        "professional-info": false,
+        "hobbies-info": false,
+      },
     };
   },
   /**
@@ -461,7 +455,6 @@ export default {
       return [];
     },
     personalInfoImages() {
-      if (this.currentSection !== "personal-info") return [];
       return [
         {
           title: "Family Picture",
@@ -490,9 +483,6 @@ export default {
     isFileActive() {
       return (file, folder) => this.file === file && this.folder === folder;
     },
-    isSectionActive() {
-      return (section) => this.currentSection === section;
-    },
     isOpen() {
       return (folder) => this.openFolder === folder;
     },
@@ -517,40 +507,13 @@ export default {
     },
   },
   methods: {
-    focusCurrentSection(section) {
-      this.currentSection = section.title;
-      const firstFolderKey = Object.keys(section.info)[0];
-      this.folder = firstFolderKey;
-      this.openFolder = firstFolderKey;
-
-      const firstFolder = section.info[firstFolderKey];
-      if (firstFolder && firstFolder.files) {
-        this.file = Object.keys(firstFolder.files)[0];
-      } else {
-        this.file = null;
-      }
-
-      document
-        .getElementById("folders-" + section.title)
-        .classList.toggle("hidden"); // show folders
-      document
-        .getElementById("section-arrow-" + section.title)
-        .classList.toggle("rotate-90"); // rotate arrow
-    },
-    focusCurrentFolder(folder) {
+    focusCurrentFolder(folder, sectionKey) {
+      this.currentSection = sectionKey;
       if (this.openFolder === folder.title) {
         this.openFolder = null;
       } else {
         this.openFolder = folder.title;
         this.folder = folder.title;
-        // handle if folder belongs to the current section. It happens when you click on a folder from a different section in mobile view.
-        this.currentSection = this.config.about.sections[this.currentSection]
-          .info[folder.title]
-          ? this.currentSection
-          : Object.keys(this.config.about.sections).find(
-              (section) =>
-                this.config.about.sections[section].info[folder.title],
-            );
         if (folder.files) {
           this.selectFile(folder, Object.keys(folder.files)[0]);
         } else {
