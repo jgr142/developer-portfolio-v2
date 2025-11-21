@@ -5,42 +5,6 @@
             <h2>_contact-me</h2>
         </div>
 
-        <div id="page-menu" class="w-full h-full flex flex-col border-right">
-
-            <!-- contacts -->
-            <div id="contacts" class="submenu">
-                <div class="title" @click="open('contacts')">
-                    <img class="arrow" src="/icons/arrow.svg" alt="">
-                    <h3>
-                        contacts
-                    </h3>
-                </div>
-                <div id="links">
-                    <div v-for="(source, key) in contact.direct.sources" :key="key" class="link">
-                        <img :src="'/icons/' + key + '.svg'" alt="">
-                        <a v-html="source" href="/" class="font-fira_retina text-menu-text hover:text-white"></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- find me also in -->
-            <div id="find-me-in" class="submenu border-top">
-                <div class="title" @click="open('find-me-in')">
-                    <img class="arrow" src="/icons/arrow.svg" alt="">
-                    <h3>
-                        find-me-also-in
-                    </h3>
-                </div>
-                <div id="links">
-                    <div v-for="(source, key) in contact.find_me_also_in.sources" :key="key" class="link">
-                        <img src="/icons/link.svg" alt="">
-                        <a :href="source.url + source.user" class="font-fira_retina text-menu-text hover:text-white" target="_blank">{{ source.title }}</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-            
         <div class="flex flex-col w-full">
 
         <!-- windows tab -->
@@ -58,7 +22,7 @@
         
                 <div id="left" class="h-full w-full flex flex-col border-right items-center">
                     
-                    <ContactForm :name="name" :email="email" :message="message" />
+                    <ContactForm v-model:name="name" v-model:message="message" />
 
                 </div>
 
@@ -85,12 +49,7 @@ export default {
     data() {
         return {
             name: '',
-            email: '',
             message: '',
-        }
-    },
-    setup() {
-        return {
             contact: DevConfig.contacts,
         }
     },
@@ -110,31 +69,6 @@ export default {
         }
     },
     mounted(){
-
-        const nameInput = document.getElementById('name-input');
-        const emailInput = document.getElementById('email-input');
-        const messageInput = document.getElementById('message-input');
-
-        nameInput.addEventListener('input', (event) => {
-            const nameValue = document.getElementById('name-value')
-            nameValue.innerHTML = event.target.value;
-        })
-
-        emailInput.addEventListener('input', (event) => {
-            const emailValue = document.getElementById('email-value')
-            emailValue.innerHTML = event.target.value;
-        })
-
-        messageInput.addEventListener('input', (event) => {
-            const messageValue = document.getElementById('message-value')
-            messageValue.innerHTML = event.target.value;
-        })
-
-        /**
-         * * Close all submenus
-         * ! This is a temporary solution.
-         * ! This is needed because when the page is loaded, height style on #links are not applied.
-         */
         const links = document.getElementsByClassName('submenu');
         for (let i = 0; i < links.length; i++) {
             if(window.innerWidth > 1024){ 
